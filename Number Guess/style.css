@@ -95,3 +95,44 @@ p {
     box-shadow: inset 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Existing styles... */
+
+@media (max-width: 767px) {
+    /* Adjust font sizes for mobile */
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    .output {
+        font-size: 1.5rem;
+    }
+
+    .result1 {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    /* Adjust button sizes for mobile */
+    .btn-large {
+        height: 60px;
+        font-size: 1.25rem;
+    }
+
+    /* Adjust container padding and margins */
+    .game-container {
+        padding: 20px;
+        max-width: 100%;
+        box-shadow: none;
+    }
+
+    .output-section {
+        margin-top: 15px;
+        padding: 15px;
+    }
+
+    .footer {
+        font-size: 1rem;
+        margin-top: 20px;
+    }
+}
+
