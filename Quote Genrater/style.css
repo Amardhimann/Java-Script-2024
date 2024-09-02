@@ -53,8 +53,7 @@ h1 {
 #new-quote {
   font-size: 1.2rem;
 }
-.btn2:hover,
-.btn2:active
+.btn2:hover
 {
 background-color:#845ef7;
 }
