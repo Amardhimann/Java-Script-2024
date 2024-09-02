@@ -3,3 +3,8 @@ https://amardhimann.github.io/Java-Script-2024/Letter%20Count
 
 2). Number Gussing Game ----->
 https://amardhimann.github.io/Java-Script-2024/Number%20Guess
+
+3). Otp Genrater ----->
+https://amardhimann.github.io/Java-Script-2024/OTP%20Genrated
+
+
