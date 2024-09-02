@@ -1,0 +1,41 @@
+/* basic styling tages */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(200deg, #dac75e, #bb88d3);
+}
+
+.container {
+    max-width: 600px;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.output-section {
+    padding: 20px;
+    background: #f4f4f4;
+    border-radius: 15px;
+    box-shadow: inset 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.output {
+    font-size: 40px;
+    font-weight: 700;
+    color: #333;
+}
+.custom-button {
+    background-color: #ff5733; /* Your custom color */
+    color: white; /* Text color */
+}
+.name{
+    margin-top: 5px !important;
+    font-size: 20px;
+    font-weight: 600;
+    word-spacing: 5px;
+}
