@@ -11,4 +11,4 @@ https://amardhimann.github.io/Java-Script-2024/OTP%20Genrated
 https://amardhimann.github.io/Java-Script-2024/Quote%20Genrater
 
 5). Couplestaan ------>
-https://amardhimann.github.io/Java-Script-2024/Quote%20Genrater
+https://amardhimann.github.io/Java-Script-2024/Couplestaan
