@@ -1,5 +1,5 @@
 // this local romantic quotes .....
-
+// love quotes.....
 const romanticQuotes = [
     "Your love is the sunrise that brightens my darkest days.",
     "When I'm with you, nothing else seems to matter.",
