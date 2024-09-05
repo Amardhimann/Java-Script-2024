@@ -1,5 +1,5 @@
 // this local romantic quotes .....
-// love quotes.....
+
 const romanticQuotes = [
     "Your love is the sunrise that brightens my darkest days.",
     "When I'm with you, nothing else seems to matter.",
@@ -163,6 +163,7 @@ const romanticQuotes = [
     "Mohabbat hai tumse, yeh baat sabse chhupayi hai, sirf tumhe apna banane ki tamanna dil mein basayi hai."
 ];
 
+
 // Pictures array....
 var romanticPhotos = [
     'img/image1.jfif','img/image2.jfif','img/image3.jfif','img/image4.jfif',
@@ -180,41 +181,55 @@ var romanticPhotos = [
 ]  ;
   
 // all elements collect by id's
-const qouteContainer = document.getElementById('qoute-container');
+const quoteContainer = document.getElementById('quote-container');
 const quote = document.getElementById('quote');
 const img = document.getElementById('main-pic');
 const wtsBtn = document.getElementById('wts');
 const nextBtn = document.getElementById('new-quote');
 const pictures = document.getElementById('main-pic');
+const loader = document.getElementById('loader');
 
 // to maintain pictures....
 function mainpicture(){
     var photoIndex = Math.floor(Math.random()* romanticPhotos.length);
     pictures.src = romanticPhotos[photoIndex];
 } 
+function loading() {
+    loader.hidden = false;
+    pictures.hidden = true;
+    quote.hidden = true; 
+    wtsBtn.hidden = true;
+    nextBtn.hidden = true;
+  }
+  
+  // Remove Loading Spinner
+  function complete() {
+   pictures.hidden = false;
+   quote.hidden = false;
+   loader.hidden = true;
+   wtsBtn.hidden = false;
+   nextBtn.hidden = false;
+  }
+
 // Its main fuction.....
 function shareQuote () {
-   pictures.hidden = true;
-   quote.innerText = "Muaaaaaa Buddyyyyyyy✨💖"
-
+ 
+loading();
 //    its fuction to dealy output....
     setTimeout(() => {
-        pictures.hidden = false;
-        
-        mainpicture(); 
-         
-         var indexNumber = Math.floor(Math.random()* romanticQuotes.length);
-     quote.innerText = romanticQuotes[indexNumber];
+    mainpicture(); 
+       var indexNumber = Math.floor(Math.random()* romanticQuotes.length);
 
     if (romanticQuotes[indexNumber].length > 45) {
         quote.classList.add('font-size-small');
     } else {
         quote.classList.remove('font-size-small');
         
-    }
-    }, 500);
-   
-  
+    }    
+    quote.innerText = romanticQuotes[indexNumber];
+  complete();
+    }, 150);
+    
 }
 // its way to share quote at whats app.....
 function shareOnWhatsApp() {
@@ -227,3 +242,4 @@ function shareOnWhatsApp() {
 nextBtn.addEventListener('click',shareQuote);
 wtsBtn.addEventListener('click',shareOnWhatsApp);
 shareQuote();
+
